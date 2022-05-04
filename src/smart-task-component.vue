@@ -24,14 +24,21 @@ export default /*#__PURE__*/ defineComponent({
 </script>
 
 <template>
-  <form>
+ <form>
+    <div class="row">
+      <div class="col">
+       <label for="formFileMultiple" class="form-label">Select Files</label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple />
+      </div>
+
+    </div>
     <div class="my-5">
       <button
         type="button"
         @click="submitForm"
-        class="btn btn-sm btn-primary"
+        class="float-end btn btn-success"
       >
-       Mark as in Progress
+        Save and complete
       </button>
     </div>
   </form>
